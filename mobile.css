@@ -1,0 +1,153 @@
+@media only screen and (max-width: 739px){
+	body{
+		margin: 0px;
+		padding:0px;
+		box-sizing: border-box;
+	}
+	header{
+		width: 100%;
+		height: 50px;
+	}
+	.header__container{
+		width: 100%;
+		height: 50px;	
+	}
+	.header__container .menu{
+		display: none;
+	}
+	.header__container .logo{
+		
+		width: 70%;
+	}
+	.header__container .logo a{
+        margin-right: 30px;
+		font-size: 18px;
+	}
+	.header__container .icon{
+		width: 30%;
+		margin-left: 20px;
+	}
+	.header__container .icon i{
+    	margin-right: 8px;
+	}
+	slider{
+	    width: 100%;
+	    height: 200px;
+	}
+	slider .slider__container{
+		position: relative;
+		width: 100%;
+		height: 200px;
+	}
+	slider .slider__container .item img{
+		width: 100%;
+		height: 200px;
+	}
+	.slider__container .item h2{
+		position: absolute;
+		line-height: 20px;
+		left: 20px;
+	}
+	.slider__container .item h2 span,
+	.slider__container .item h2 small{
+		font-size: 12px;
+	}
+	.seller__container{
+		text-align: center;
+	}
+	
+	.seller__container ul{
+		flex-direction: column;
+		justify-content: center;
+	}
+	seller ul li{
+		width: 100%;
+		margin-top: 20px;
+	
+	}
+	.seller__container ul li img{
+		width: 260px;
+	}
+	seller ul li .action{
+		right: 40px;
+	}
+	section{
+		width: 100%;
+		height: 500px;
+	}
+	.container ul{
+		display: flex;
+		flex-direction: column;
+	}
+	summer{
+		width: 100%;
+	}
+	.summer__container ul{
+		display: flex;
+		flex-direction: column;
+	}
+	.summer__container ul li img{
+		width: 60%;
+		margin: 70px 70px;
+	}
+	.product__container ul{
+		text-align: center;
+	}
+	.product__container ul li{
+		width: 100%;   
+	}
+	product ul li .action{
+		right: 50px;
+	}
+	.discount__container{
+		width: 100%;
+		flex-direction: column;
+	}
+ 	.discount__container .Special{
+   		 max-width: 100%;
+   		 height: 300px;
+	}
+	.discount__container .Special .action{
+		top: 50px;
+		left: 0px;	
+	}
+	.discount__container .Special .action button{
+		margin-top: 30px;
+	}
+
+	.discount__container .Special img{
+		width: 100%;
+		height: 400px;
+	}
+	.discount__container .logo{
+		width: 100%;
+		top:0;
+		flex-wrap: wrap;
+		height: 300px;
+	}
+	.discount__container .logo img{
+		margin-right: 10px;
+	}
+	.footer__container{
+		height: 130px;
+	     flex-direction: column;
+	}
+	.footer__container p{
+		margin-top: 20px;
+		width: 100%;
+	}
+	.footer__container ul{
+		width: 100%;
+		margin-top: 20px;
+	}
+}
+@media only screen and (max-width: 320px){
+    seller ul li .action{
+		right: -10px;
+	}
+	product ul li .action{
+		right: 10px;
+	}
+}
+
+

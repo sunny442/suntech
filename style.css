@@ -1,0 +1,377 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,900;1,100;1,500&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+ ul{
+ 	list-style-type: none;
+ }
+ a{
+ 	text-decoration: none;
+ }
+body{
+     font-family: 'Roboto', sans-serif;
+}
+:root{
+    --text-color:#3cb878;
+    --text-hover:#ec7033;
+    --color:#333333;
+}
+
+header {
+	width: 100%;
+	height: 100px;
+}
+.header__container{
+	display: flex;
+	align-items: center;
+	text-align: center;
+	height: 100px;
+}
+.header__container .logo{
+	width: 30%;
+}
+.header__container .logo a{
+    text-transform: uppercase;
+    color: var(--text-color);
+    font-size: 24px;
+}
+.header__container .logo a:hover{
+    color: var(--text-hover);
+    opacity: 0.7;
+}
+.header__container .menu{
+    width: 45%;
+}
+.header__container .menu ul li a{
+	font-size: 18px;
+	color: var(--color);
+}
+.header__container .menu ul li {
+	display: inline-block;
+	margin-right: 1.5em;
+}
+.header__container .menu ul li .active{
+    color: var(--text-color);
+}
+.header__container .menu ul li a:hover{
+    color: var(--text-hover);
+    opacity: 0.7;
+}
+.header__container .icon{
+    width: 25%;
+    cursor: pointer;
+}
+.header__container .icon i{
+    margin-right: 20px;
+}
+.header__container .circle {
+	position: relative;
+}
+.header__container span{
+	position: absolute;
+	top:-12px;
+	right: -12px;
+	width: 20px;
+	height: 20px;
+	line-height: 20px;
+	border-radius: 50%;
+	background: var(--text-color);
+	text-align: center;
+	color: #fff;	
+}
+
+/*____slider____*/
+slider{
+    width: 100%;
+    height: 560px;
+}
+slider .slider__container{
+	position: relative;
+	width: 100%;
+	height: 560px;
+}
+slider .slider__container .item img{
+	width: 100%;
+	height: 560px;
+	position: relative;
+}
+slider .slider__container h2{
+	position: absolute;
+	top:43%;
+	left: 18%;
+
+	line-height: 30px;
+	letter-spacing: 4px;
+}
+.slider__container span, .slider__container small{
+	display: block;
+	font-size: 26px;
+}
+.slider__container small{
+	color: var(--text-color);
+}
+
+ /*___Seller___*/
+seller {
+	display: block;
+    width: 100%;
+    margin-top: 50px;
+}
+seller .seller__container ul {
+	margin: 0px 40px;
+    display: flex;
+    align-items: center;
+}
+seller ul li{
+	width: 20%;
+	min-height: 200px;
+	margin-right: 15px;
+	position: relative;
+}
+seller .seller__container img{
+	max-width: 300px;
+}
+seller .seller__container div{
+    margin-top: 30px;
+}
+seller .seller__container div h3{
+	letter-spacing: 2px;
+	font-size: 22px;
+}
+seller .seller__container div small{
+	color: var(--text-color);
+	font-size: 12px;
+}
+seller .seller__container ul li div h4{
+	margin-top: 20px;
+	font-size: 16px;
+	font-weight: normal;
+}
+
+seller ul li .action{
+	position: absolute;
+	top: -30px;
+	right: 14px; 
+	display: flex;
+	flex-direction: column;
+}
+seller ul li div .color__icon{
+	width: 25px;
+	height: 25px;
+	line-height: 25px;
+	text-align: center;
+	color: #fff;
+	margin-top: 10px;
+    background: var(--text-color);
+    display: none;
+}
+seller ul li div .color__icon:hover{
+	cursor: pointer;
+}
+seller ul li:hover .color__icon{
+   display: block;
+}
+seller ul li a{
+	font-weight: bold;
+	color: var(--color);
+}
+seller ul li p{
+	font-size: 20px;
+	padding-top: 6px;
+	color: var(--text-color);
+}
+
+/*___section___*/
+section{
+	width: 100%;
+	height: 180px;
+	margin-top: 100px;
+	background:#f5f6f9;
+}
+.container ul{
+	display: flex;
+    justify-content: space-around;
+    padding-top: 40px;
+    text-align: center;
+}
+.container ul li a{
+	color: #464646;
+	font-size: 25px;
+    
+}
+.container ul li h3{
+	margin-top: 20px;
+	letter-spacing: 2px;
+}
+.container ul li small{
+	color: #979797;
+}
+summer{
+	width: 100%;
+}
+.summer__container ul{
+	display: flex;
+}
+.summer__container ul li{
+	width: 100%;
+}
+.summer__container ul li img{
+	width: 60%;
+	margin: 70px 100px;
+}
+.summer__container .newfashion,
+.summer__container .summer{
+	background: #2e3348;
+}
+.summer__container .sale{
+    background: #34394f;
+}
+product{
+	width: 100%;
+}
+.product__container .featured{
+	margin-top: 100px;
+	text-align: center;
+}
+.product__container .featured h2{
+	color: var(--color);
+	letter-spacing: 2px;
+}
+.product__container .featured small{
+	color: var(--text-color);
+}
+.product__container ul{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+.product__container ul li img{
+	width: 300px;
+}
+.product__container ul li{
+	width: 18%;
+	min-height: 200px;
+	margin-right: 10px;
+	margin-left: 10px;
+	margin-top: 100px;
+	position: relative;
+}
+product ul li .action{
+	position: absolute;
+	top: 0px;
+	right: 8px; 
+	display: flex;
+	flex-direction: column;
+}
+product ul li div .color__icon{
+	width: 25px;
+	height: 25px;
+	line-height: 25px;
+	text-align: center;
+	color: #fff;
+	margin-top: 10px;
+    background: var(--text-color);
+    display: none;
+}
+product ul li div .color__icon:hover{
+	cursor: pointer;
+}
+product ul li:hover .color__icon{
+   display: block;
+}
+product ul li a{
+	font-weight: bold;
+	color: var(--color);
+}
+product ul li p{
+	font-size: 20px;
+	padding-top: 6px;
+	color: var(--text-color);
+}
+
+discount{
+	width: 100%;
+}
+.discount__container{
+	width: 100%;
+	display: flex;
+}
+.discount__container .Special{
+    max-width: 50%;
+    position: relative;
+}
+.discount__container .Special img{
+	width: 100%;
+}
+.discount__container .Special .action{
+	color: #fff;
+	position: absolute;
+	text-align: center;
+	top: 50px;
+	left: 100px;
+	line-height: 1.5;
+}
+.discount__container .Special .action a{
+	color: #fff;
+    font-size: 26px;
+    letter-spacing: 2px;
+}
+.discount__container .Special .action p{
+    font-size: 12px;
+}
+.discount__container .Special .action input{
+	margin-top: 20px;
+	width: 300px;
+	height: 40px;
+	box-shadow: 1px 1px 1px 2px inset #f6c5f0;
+}
+.discount__container .Special .action button{
+	height: 40px;
+	width: 160px;
+	background: var(--text-color);
+	color: #fff;
+}
+.discount__container .Special .action button:hover{
+   background: var(--text-hover);
+   cursor: pointer;
+}
+.discount__container .logo img{
+	max-width: 120px;
+	height: 140px;
+	margin-left: 30px;
+}
+.discount__container .logo{
+ 	width: 50%;
+ 	height: 263px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background:#f5f6f9;
+}
+footer{
+	width: 100%;
+}
+.footer__container{
+	height: 60px;
+	background: #000;
+	display: flex;
+	align-items: center;
+}
+.footer__container p{
+	width: 50%;
+	color: #fff;
+	text-align: center;
+}
+.footer__container ul{
+	width: 50%;
+}
+.footer__container ul li{
+	text-align: center;
+}
+.footer__container ul li img{
+	margin-right: 8px;
+}
